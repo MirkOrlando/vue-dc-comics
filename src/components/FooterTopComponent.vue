@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col col-5 text-center" v-for="(item, index) in items" :key="index">
-                    <img :src="item.src" alt="">
-                    <span>{{item.text}}</span>
+                    <img :src="'@/assets/img/' + item.src" alt="">
+                    <div>{{item.text}}</div>
                 </div>
             </div>
         </div>
@@ -18,24 +18,24 @@ export default {
         return{
             items:[
                 {
-                    src:'@/assets/img/buy-comics-digital-comics.png',
+                    src:'buy-comics-digital-comics.png',
                     text:'digital comix'
                 },
                 {
-                    src:'@/assets/img/buy-comics-digital-comics.png',
-                    text:'digital comix'
+                    src:'buy-comics-merchandise.png',
+                    text:'dc merchandise'
                 },
                 {
-                    src:'@/assets/img/buy-comics-digital-comics.png',
-                    text:'digital comix'
+                    src:'buy-comics-subscriptions.png',
+                    text:'subscription'
                 },
                 {
-                    src:'@/assets/img/buy-comics-digital-comics.png',
-                    text:'digital comix'
+                    src:'buy-comics-shop-locator.png',
+                    text:'comic shop lacator'
                 },
                 {
-                    src:'@/assets/img/buy-comics-digital-comics.png',
-                    text:'digital comix'
+                    src:'buy-dc-pover-visa.png',
+                    text:'dc power visa'
                 }
             ]
         }
