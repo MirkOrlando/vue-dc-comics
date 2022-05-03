@@ -3,7 +3,9 @@
     <SiteHeader/>
     <SiteMain/>
     <footer>
-      <div class="footer-top">footer-top</div>
+      <div class="footer-top">
+        
+      </div>
       <div class="footer-middle">footer-middle</div>
       <div class="footer-bottom">footer-bottom</div>
     </footer>
