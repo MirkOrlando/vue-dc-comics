@@ -21,6 +21,10 @@ export default {
 
 /* common */
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +39,10 @@ img {
 
 .h-100 {
   height: 100%;
+}
+
+.jc-space-between {
+  justify-content: space-between;
 }
 
 #app {
@@ -58,14 +66,6 @@ img {
 .col {
   padding: 0 1rem;
   margin: 0 1rem;
-}
-
-.col-40 {
-  width: 40%;
-}
-
-.col-60 {
-  width: 60%;
 }
 
 </style>
