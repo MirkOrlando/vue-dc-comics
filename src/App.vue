@@ -49,6 +49,14 @@ ul {
   height: 100%;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
 .pt-4 {
   padding-top: 4rem;
 }
@@ -57,8 +65,20 @@ ul {
   padding-bottom: 4rem;
 }
 
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
 .jc-space-between {
   justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
 }
 
 .fd-column {

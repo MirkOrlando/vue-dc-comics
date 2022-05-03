@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="row fd-column gy-1">
-                                <div class="col">
+                                <div class="col m-0 p-0">
                                     <h3>dc comics</h3>
                                     <ul>
                                         <li>lorem</li>
@@ -18,7 +18,7 @@
                                         <li>lorem</li>
                                     </ul>
                                 </div>
-                                <div class="col">
+                                <div class="col m-0 p-0">
                                     <h3>shop</h3>
                                     <ul>
                                         <li>lorem</li>
