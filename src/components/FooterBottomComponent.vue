@@ -30,13 +30,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/_variables.scss';
+
 .footer-bottom {
-    background-color: #383838;
+    background-color: $darkColor;
     .btn {
         display: inline-block;
         text-decoration: none;
-        color: white;
-        border: 4px solid cornflowerblue;
+        color: $lightestColor;
+        border: 4px solid $primaryColor;
         padding: 0.5rem;
         text-transform: uppercase;
     }
@@ -48,7 +50,7 @@ export default {
 
         .text {
             text-transform: uppercase;
-            color: cornflowerblue;
+            color: $primaryColor;
             font-weight: bold;
         }
 

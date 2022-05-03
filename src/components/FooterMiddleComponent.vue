@@ -71,15 +71,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/_variables.scss';
+
 .footer-middle {
     background-image: url('@/assets/img/footer-bg.jpg');
     h3 {
-        color: white;
+        color: $lightestColor;
         text-transform: uppercase;
     }
 
     li {
-        color: #ededed
+        color: $paleDarkColor;
     }
 
     .logo-lg {

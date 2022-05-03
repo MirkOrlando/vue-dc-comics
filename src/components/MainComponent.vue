@@ -13,9 +13,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/_variables.scss';
+
 main {
-    background-color: black;
-    color: white;
+    background-color: $darkerColor;
+    color: $lightestColor;
     padding: 4rem;
 }
 </style>

@@ -46,9 +46,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/_variables.scss';
+
 .footer-top {
-    background-color: cornflowerblue;
-    color: white;
+    background-color: $primaryColor;
+    color: $lightestColor;
 
     .wrapper {
         display: flex;
