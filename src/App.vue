@@ -39,14 +39,34 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 /* utility */
 
 .h-100 {
   height: 100%;
 }
 
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
+
 .jc-space-between {
   justify-content: space-between;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.gy-1 {
+  row-gap: 1rem;
 }
 
 .text-center {
@@ -72,12 +92,17 @@ img {
 }
 
 .col {
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 0 1rem;
 }
 
 .col-5 {
   width: calc(100%/12)*5;
+}
+
+.col-50 {
+  width: 50%;
 }
 
 </style>

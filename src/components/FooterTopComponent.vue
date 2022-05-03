@@ -3,8 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col col-5 text-center" v-for="(item, index) in items" :key="index">
-                    <img :src="'@/assets/img/' + item.src" alt="">
-                    <div>{{item.text}}</div>
+                    <div class="wrapper">
+                        <img :src="'@/assets/img/' + item.src" alt="">
+                        <div class="text">{{item.text}}</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,5 +49,20 @@ export default {
 .footer-top {
     background-color: cornflowerblue;
     color: white;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        img {
+            width: 50px;
+        }
+
+        text {
+            text-transform: uppercase;
+        }
+
+    }
 }
 </style>

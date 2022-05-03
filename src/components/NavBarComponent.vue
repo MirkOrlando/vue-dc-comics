@@ -35,7 +35,6 @@ export default {
             height: 100%;
             ul {
                 display: flex;
-                list-style: none;
                 height: 100%;
 
                 li {
