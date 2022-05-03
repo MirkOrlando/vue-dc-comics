@@ -1,10 +1,10 @@
 <template>
     <div class="footer-top">
         <div class="container">
-            <div class="row">
+            <div class="row pt-4 pb-4">
                 <div class="col col-5 text-center" v-for="(item, index) in items" :key="index">
                     <div class="wrapper">
-                        <img :src="'@/assets/img/' + item.src" alt="">
+                        <img :src="require(`@/assets${item.src}`)" alt="">
                         <div class="text">{{item.text}}</div>
                     </div>
                 </div>
@@ -20,23 +20,23 @@ export default {
         return{
             items:[
                 {
-                    src:'buy-comics-digital-comics.png',
+                    src:'/img/buy-comics-digital-comics.png',
                     text:'digital comix'
                 },
                 {
-                    src:'buy-comics-merchandise.png',
+                    src:'/img/buy-comics-merchandise.png',
                     text:'dc merchandise'
                 },
                 {
-                    src:'buy-comics-subscriptions.png',
+                    src:'/img/buy-comics-subscriptions.png',
                     text:'subscription'
                 },
                 {
-                    src:'buy-comics-shop-locator.png',
+                    src:'/img/buy-comics-shop-locator.png',
                     text:'comic shop lacator'
                 },
                 {
-                    src:'buy-dc-pover-visa.png',
+                    src:'/img/buy-dc-power-visa.svg',
                     text:'dc power visa'
                 }
             ]
@@ -56,10 +56,10 @@ export default {
         gap: 0.5rem;
 
         img {
-            width: 50px;
+            height: 50px;
         }
 
-        text {
+        .text {
             text-transform: uppercase;
         }
 
