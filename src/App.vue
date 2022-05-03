@@ -2,25 +2,21 @@
   <div id="app">
     <SiteHeader/>
     <SiteMain/>
-    <footer>
-      <div class="footer-top">
-        
-      </div>
-      <div class="footer-middle">footer-middle</div>
-      <div class="footer-bottom">footer-bottom</div>
-    </footer>
+    <SiteFooter/>
   </div>
 </template>
 
 <script>
 import SiteHeader from '@/components/HeaderComponent.vue'
 import SiteMain from '@/components/MainComponent.vue'
+import SiteFooter from '@/components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
-    SiteMain
+    SiteMain,
+    SiteFooter
   }
 }
 </script>
@@ -53,6 +49,10 @@ img {
   justify-content: space-between;
 }
 
+.text-center {
+  text-align: center;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -74,6 +74,10 @@ img {
 .col {
   padding: 0 1rem;
   margin: 0 1rem;
+}
+
+.col-5 {
+  width: calc(100%/12)*5;
 }
 
 </style>
