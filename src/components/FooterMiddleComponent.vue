@@ -44,7 +44,7 @@
                             </ul>
                         </div>
                         <div class="col">
-                            <h3>dc comics</h3>
+                            <h3>sites</h3>
                             <ul>
                                 <li>lorem</li>
                                 <li>lorem</li>

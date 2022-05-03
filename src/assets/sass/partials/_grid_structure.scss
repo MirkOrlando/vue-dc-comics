@@ -1,0 +1,25 @@
+/* grid structure */
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    margin: 0 -1rem;
+}
+
+.col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 1rem;
+}
+
+.col-5 {
+    width: calc(100%/12)*5;
+}
+
+.col-50 {
+    width: 50%;
+}

@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul>
-            <li v-for="(item, index) in NavItem" :key="index">{{item}}</li>
+            <li v-for="(item, index) in NavItem" :key="index" :class="{active: activeItem === index}" @click="activeItem = index">{{item}}</li>
         </ul>
     </nav>
 </template>
@@ -22,9 +22,10 @@ export default {
                 'fans',
                 'news',
                 'shop'
-            ]
+            ],
+            activeItem: 1
         }
-    }
+    },
 }
 </script>
 
@@ -50,6 +51,8 @@ export default {
                     height: 100%;
                     border-bottom: 6px solid transparent;
                     font-weight: bold;
+                    cursor: pointer;
+                    transition: all 250ms linear;
 
                     &.active {
                         color: $primaryColor;
