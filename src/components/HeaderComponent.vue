@@ -2,12 +2,12 @@
     <header>
       <div class="container">
         <div class="row jc-space-between">
-          <div class="col col-40">
+          <div class="col">
             <div class="logo">
               <img src="@/assets/img/dc-logo.png" alt="">
             </div>
           </div>
-          <div class="col col-60">
+          <div class="col">
             <nav>
               <ul>
                 <li>characters</li>
@@ -36,7 +36,12 @@ export default {
 
 <style lang="scss" scoped>
     header {
-        padding: 1rem 0;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
 
         nav {
             display: flex;
@@ -53,7 +58,8 @@ export default {
                     display: flex;
                     align-items: center;
                     text-transform: uppercase;
-                    padding: 0 1rem;
+                    padding: 4rem 0;
+                    margin: 0 1rem;
                     height: 100%;
                     border-bottom: 4px solid transparent;
 
