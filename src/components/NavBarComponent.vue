@@ -1,8 +1,6 @@
 <template>
     <nav>
-        <ul>
-            <li v-for="(item, index) in NavItem" :key="index" :class="{active: activeItem === index}" @click="activeItem = index">{{item}}</li>
-        </ul>
+        <a :href="item.href" v-for="(item, index) in NavItems" :key="index" :class="{active: activeItem === index}" @click="activeItem = index">{{item.text}}</a>
     </nav>
 </template>
 
@@ -11,17 +9,57 @@ export default {
     name: 'NavBarComponent',
     data() {
         return { 
-            NavItem: [
-                'characters',
-                'comics',
-                'movies',
-                'tv',
-                'games',
-                'collectibles',
-                'videos',
-                'fans',
-                'news',
-                'shop'
+            NavItems: [
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'characters'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'comics'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'movies'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'tv'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'games',
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'collectibles',
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'videos'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'fans'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'news'
+                },
+                {
+                    id: 1,
+                    href: '#',
+                    text: 'shop'
+                }
             ],
             activeItem: 1
         }
@@ -31,34 +69,33 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '@/assets/sass/_variables.scss';
-
         nav {
             display: flex;
             align-items: center;
             height: 100%;
-            color: $darkColor;
-            ul {
+
+            a {
+                color: $darkColor;
                 display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                padding: 4rem 1rem;
+                margin: 0 0.5rem;
                 height: 100%;
-
-                li {
-                    display: flex;
-                    align-items: center;
-                    text-transform: uppercase;
-                    padding: 4rem 0;
-                    margin: 0 1rem;
-                    height: 100%;
-                    border-bottom: 6px solid transparent;
-                    font-weight: bold;
-                    cursor: pointer;
-                    transition: all 250ms linear;
-
-                    &.active {
-                        color: $primaryColor;
-                        border-color: $primaryColor;
-                    }
-
+                border-bottom: 6px solid transparent;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 250ms linear;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.active {
+                    color: $primaryColor;
+                    border-color: $primaryColor;
+                }
+                &:hover {
+                    color: $primaryColor;
+                    border-color: $primaryColor;
                 }
             }
         }

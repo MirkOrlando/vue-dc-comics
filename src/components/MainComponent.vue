@@ -3,21 +3,28 @@
       <div class="container">
         <h2>** Content goes here **</h2>
       </div>
+      <Banner/>
     </main>
 </template>
 
 <script>
+import Banner from '@/components/BannerComponent.vue'
+
 export default {
-    name: 'MainComponent'
+    name: 'MainComponent',
+    components: {
+      Banner
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/_variables.scss';
 
 main {
     background-color: $darkerColor;
     color: $lightestColor;
-    padding: 4rem;
+    h2 {
+      padding: 4rem 0;
+    }
 }
 </style>

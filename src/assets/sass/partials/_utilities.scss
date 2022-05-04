@@ -8,6 +8,10 @@
     margin: 0 !important;
 }
 
+.pl-0 {
+    padding-left: 0 !important;
+}
+
 .p-0 {
     padding: 0 !important;
 }
@@ -34,6 +38,10 @@
 
 .ai-center {
     align-items: center;
+}
+
+.fw-wrap {
+    flex-wrap: wrap;
 }
 
 .fd-column {

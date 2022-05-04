@@ -7,17 +7,21 @@
 
 .row {
     display: flex;
-    margin: 0 -1rem;
+    margin: 0 1rem;
 }
 
 .col {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 0 1rem;
+    margin: 0 -1rem;
 }
 
 .col-5 {
     width: calc(100%/12)*5;
+}
+
+.col-4 {
+    width: calc(100%/12)*4;
 }
 
 .col-50 {
