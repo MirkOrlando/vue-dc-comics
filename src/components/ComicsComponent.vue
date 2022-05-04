@@ -1,8 +1,38 @@
 <template>
-    <div class="comic-card">
-        <div class="comic-cover">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+        <div class="comic-card">
+            <div class="comic-cover">
+                <img :src="comic.thumb" :alt="comic.series">
+            </div>
+            <div class="comic-title">{{comic-series}}</div>
         </div>
-        <div class="comic-title">Action Comics</div>
-    </div>
 </template>
+
+<script>
+export default {
+    name: 'ComicsComponent',
+    props: {
+        thumb: String,
+        price: String,
+        series: String,
+        type: String
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+
+.comic-card {
+    width: calc((100% / 6) - 0.5rem);
+    padding: 1rem 0.5rem;
+    .comic-cover {
+        aspect-ratio: 1 / 1;
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+
+</style>
