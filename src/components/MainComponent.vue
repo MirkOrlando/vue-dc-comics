@@ -1,8 +1,12 @@
 <template>
     <main>
       <div class="container pt-6">
+        <h2>Current series</h2>
         <div class="row jc-center fw-wrap">
-          <Comics :thumb="thumb" :series="series" v-for="(comic, index) in comics" :key="index"/>
+          <Comics :comic="comic" v-for="(comic, index) in comics" :key="index"/>
+        </div>
+        <div class="actions">
+          <a href="" class="btn">Load more</a>
         </div>
       </div>
       <Banner/>
@@ -103,13 +107,29 @@ export default {
 <style lang="scss" scoped>
 
 main {
-    background: url('@/assets/img/jumbotron.jpg'),linear-gradient(to bottom, $darkerColor, $darkerColor 100%);
-    background-size: 100% 30%, cover;
-    background-position: top center, bottom;
+    background: linear-gradient(to top, $darkerColor 63%, transparent 63%), url('@/assets/img/jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: $lightestColor;
     h2 {
-      padding: 4rem 0;
+      display: inline-block;
+      background-color: $primaryColor;
+      padding: 0.75rem 2rem;
+      text-transform: uppercase;
     }
+    .actions {
+      padding: 0.5rem 0 2rem;
+      text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: $lightestColor;
+        background-color: $primaryColor;
+        padding: 0.75rem 3.25rem;
+        text-transform: uppercase;
+    }
+
 }
 </style>

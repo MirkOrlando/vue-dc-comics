@@ -3,19 +3,14 @@
             <div class="comic-cover">
                 <img :src="comic.thumb" :alt="comic.series">
             </div>
-            <div class="comic-title">{{comic-series}}</div>
+            <div class="comic-title">{{comic.series}}</div>
         </div>
 </template>
 
 <script>
 export default {
     name: 'ComicsComponent',
-    props: {
-        thumb: String,
-        price: String,
-        series: String,
-        type: String
-    }
+    props: ["comic"]
 }
 </script>
 
