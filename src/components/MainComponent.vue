@@ -6,7 +6,7 @@
           <Comics :comic="comic" v-for="(comic, index) in comics" :key="index"/>
         </div>
         <div class="actions">
-          <a href="" class="btn">Load more</a>
+          <a href="" class="btn-primary">Load more</a>
         </div>
       </div>
       <Banner/>
@@ -107,9 +107,9 @@ export default {
 <style lang="scss" scoped>
 
 main {
-    background: linear-gradient(to top, $darkerColor 63%, transparent 63%), url('@/assets/img/jumbotron.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to top, $darkerColor 830px, transparent 830px), url('@/assets/img/jumbotron.jpg');
+    background-size: contain;
+    background-position: top;
     background-repeat: no-repeat;
     color: $lightestColor;
     h2 {
@@ -122,14 +122,5 @@ main {
       padding: 0.5rem 0 2rem;
       text-align: center;
     }
-    .btn {
-        display: inline-block;
-        text-decoration: none;
-        color: $lightestColor;
-        background-color: $primaryColor;
-        padding: 0.75rem 3.25rem;
-        text-transform: uppercase;
-    }
-
 }
 </style>

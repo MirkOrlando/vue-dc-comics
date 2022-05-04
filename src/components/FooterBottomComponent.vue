@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row jc-space-between ai-center pb-2 pt-2">
                 <div class="col">
-                    <a href="#" class="btn">Sign-up now!</a>
+                    <a href="#" class="btn-primary-outline">Sign-up now!</a>
                 </div>
                 <div class="col">
                     <div class="social">
@@ -33,15 +33,7 @@ export default {
 
 .footer-bottom {
     background-color: $darkColor;
-    .btn {
-        display: inline-block;
-        text-decoration: none;
-        color: $lightestColor;
-        border: 4px solid $primaryColor;
-        padding: 0.5rem;
-        text-transform: uppercase;
-    }
-
+    
     .social {
         display: flex;
         align-items: center;

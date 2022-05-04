@@ -3,3 +3,10 @@ $darkerColor: #1C1C1C;
 $darkColor: #303030;
 $paleDarkColor: #959595;
 $lightestColor: white;
+@mixin button {
+    display: inline-block;
+    color: $lightestColor;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: all 250ms linear;
+}
