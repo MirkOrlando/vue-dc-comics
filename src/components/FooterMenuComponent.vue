@@ -22,9 +22,13 @@ export default {
     h3 {
         color: $lightestColor;
         text-transform: uppercase;
+        padding-bottom: 1rem;
     }
 
     li {
+
+        line-height: 1.5rem;
+
         a {
             color: $paleDarkColor;
         }

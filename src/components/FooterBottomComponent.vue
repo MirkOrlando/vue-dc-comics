@@ -33,7 +33,7 @@ export default {
 
 .footer-bottom {
     background-color: $darkColor;
-    
+
     .social {
         display: flex;
         align-items: center;
@@ -47,6 +47,11 @@ export default {
 
         img {
             margin-left: 1rem;
+            transition: all 250ms linear;
+            &:hover {
+                cursor: pointer;
+                transform: scale(0.90);
+            }
         }
     }
 }

@@ -19,6 +19,11 @@ export default {
 .comic-card {
     width: calc((100% / 6) - 0.5rem);
     padding: 1rem 0.5rem;
+    transition: all 250ms linear;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
     .comic-cover {
         aspect-ratio: 1 / 1;
         img {
@@ -27,6 +32,9 @@ export default {
             object-fit: cover;
             object-position: top;
         }
+    }
+    .comic-title {
+        padding-top: 0.5rem;
     }
 }
 

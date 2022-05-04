@@ -61,6 +61,11 @@ export default {
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+        transition: all 250ms linear;
+        cursor: pointer;
+        &:hover {
+            transform: translate(0, -10px);
+        }
 
         img {
             height: 50px;

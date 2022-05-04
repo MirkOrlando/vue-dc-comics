@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap" rel="stylesheet">
+    </head>
     <SiteHeader/>
     <SiteMain/>
     <SiteFooter/>
@@ -24,12 +29,5 @@ export default {
 <style lang="scss">
 
 @import '@/assets/sass/style.scss';
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 
 </style>

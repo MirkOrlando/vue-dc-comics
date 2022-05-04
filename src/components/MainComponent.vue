@@ -108,7 +108,7 @@ export default {
 
 main {
     background: linear-gradient(to top, $darkerColor 830px, transparent 830px), url('@/assets/img/jumbotron.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     color: $lightestColor;
