@@ -2,18 +2,12 @@
 
 .container {
     max-width: 1440px;
+    padding: 0 1rem;
     margin: auto;
 }
 
 .row {
     display: flex;
-    margin: 0 1rem;
-}
-
-.col {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0 -1rem;
 }
 
 .col-5 {

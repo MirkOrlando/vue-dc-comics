@@ -1,7 +1,9 @@
 <template>
     <main>
-      <div class="container">
-        <h2>** Content goes here **</h2>
+      <div class="container pt-6">
+        <div class="row">
+          <Comics/>
+        </div>
       </div>
       <Banner/>
     </main>
@@ -9,11 +11,13 @@
 
 <script>
 import Banner from '@/components/BannerComponent.vue'
+import Comics from '@/components/ComicsComponent.vue'
 
 export default {
     name: 'MainComponent',
     components: {
-      Banner
+      Banner,
+      Comics
     }
 }
 </script>
@@ -21,7 +25,10 @@ export default {
 <style lang="scss" scoped>
 
 main {
-    background-color: $darkerColor;
+    background: url('@/assets/img/jumbotron.jpg'),linear-gradient(to bottom, $darkerColor, $darkerColor 100%);
+    background-size: 100% 30%, cover;
+    background-position: top center, bottom;
+    background-repeat: no-repeat;
     color: $lightestColor;
     h2 {
       padding: 4rem 0;

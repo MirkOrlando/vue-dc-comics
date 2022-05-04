@@ -3,7 +3,9 @@
         <div class="container">
             <div class="row jc-space-between">
                 <div class="col col-50 pt-4 pb-4">
-                    <LinksList/>
+                    <div class="row fw-wrap">
+                        <FooterMenu :title="title" :links="links" v-for="({title, links}, index) in footerMenu" :key="index"/>
+                    </div>
                 </div>
                 <div class="col col-50">
                     <div class="logo-lg h-100"></div>
@@ -14,14 +16,139 @@
 </template>
 
 <script>
-import LinksList from '@/components/LinksListComponent.vue'
+import FooterMenu from '@/components/FooterMenuComponent.vue'
 
 export default {
     name: 'FooterTopComponent',
     components: {
-        LinksList
+        FooterMenu
+    },
+    data() {
+        return {
+            footerMenu: [
+                {
+                    title: 'DC Comics',
+                    links: [
+                        {
+                            href: '#',
+                            text: 'Characters'
+                        },
+                        {
+                            href: '#',
+                            text: 'Comics'
+                        },
+                        {
+                            href: '#',
+                            text: 'Movies'
+                        },
+                        {
+                            href: '#',
+                            text: 'TV'
+                        },
+                        {
+                            href: '#',
+                            text: 'Games'
+                        },
+                        {
+                            href: '#',
+                            text: 'Videos'
+                        },
+                        {
+                            href: '#',
+                            text: 'News'
+                        },
+                    ]
+                },
+                {
+                    title: 'DC',
+                    links: [
+                        {
+                            href: '#',
+                            text: 'Terms of Use'
+                        },
+                        {
+                            href: '#',
+                            text: 'Privacy Policy (New)'
+                        },
+                        {
+                            href: '#',
+                            text: 'Ad Choises'
+                        },
+                        {
+                            href: '#',
+                            text: 'Advertising'
+                        },
+                        {
+                            href: '#',
+                            text: 'Jobs'
+                        },
+                        {
+                            href: '#',
+                            text: 'Subscription'
+                        },
+                        {
+                            href: '#',
+                            text: 'Talent Workshop'
+                        },
+                        {
+                            href: '#',
+                            text: 'CPSC Certificates'
+                        },
+                        {
+                            href: '#',
+                            text: 'Ratings'
+                        },
+                        {
+                            href: '#',
+                            text: 'Shop help'
+                        },
+                        {
+                            href: '#',
+                            text: 'Contact Us'
+                        }
+                    ]
+                },
+                {
+                    title: 'Sites',
+                    links: [
+                        {
+                            href: '#',
+                            text: 'DC'
+                        },
+                        {
+                            href: '#',
+                            text: 'MAD Magazine'
+                        },
+                        {
+                            href: '#',
+                            text: 'DC Kids'
+                        },
+                        {
+                            href: '#',
+                            text: 'DC Universe'
+                        },
+                        {
+                            href: '#',
+                            text: 'DC Power Visa'
+                        },
+                    ]
+                },
+                {
+                    title: 'Shop',
+                    links: [
+                        {
+                            href: '#',
+                            text: 'Shop DC'
+                        },
+                        {
+                            href: '#',
+                            text: 'Shop DC Collectibles'
+                        },
+                    ]
+                },
+            ]
+        }
     }
-
 }
 </script>
 
